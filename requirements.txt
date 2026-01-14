@@ -1,4 +1,5 @@
 reportlab
 fontTools
+PyPDF2
 pywin32
 psutil
