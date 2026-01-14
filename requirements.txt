@@ -1,0 +1,4 @@
+reportlab
+fontTools
+pywin32
+psutil
