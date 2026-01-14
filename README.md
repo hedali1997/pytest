@@ -145,9 +145,10 @@ GUI界面包含以下控件：
 
 ### 直接运行EXE版本
 
-打包完成后，在`dist/gui_app`目录下会生成exe文件，可以直接运行：
-- 使用提供的批处理文件：`run_gui_exe.bat`
-- 或直接双击 `gui_window_mover.exe`
+打包完成后，在`dist`目录下会生成exe文件，可以直接运行：
+- 生成的exe文件名为 `WindowMoverTool.exe`
+- 该文件位于 `D:/develop/python/pytest/gui_app/dist/WindowMoverTool.exe`
+- 可直接双击运行或复制到任意位置使用
 
 ## 注意事项
 

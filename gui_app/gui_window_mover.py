@@ -1,14 +1,11 @@
+import threading
 import tkinter as tk
 from tkinter import ttk, messagebox
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'window_mover'))
 
-try:
-    from window_mover.move_window import move_exe_to_position
-except ImportError:
-    from move_window import move_exe_to_position  # fallback when run as standalone
-import threading
+from move_window import move_exe_to_position
 
 
 class WindowMoverGUI:
