@@ -21,6 +21,7 @@
 ### PDF水印使用方法
 
 ```bash
+cd pdf_tools
 python main.py <输入PDF路径> <水印图片路径> <输出PDF路径>
 ```
 
@@ -53,6 +54,7 @@ pip install -r requirements.txt
 ### 命令行方式
 
 ```bash
+cd window_mover
 python move_window.py <exe名称或窗口标题> <x坐标> <y坐标> [--width 宽度] [--height 高度]
 ```
 
@@ -60,12 +62,15 @@ python move_window.py <exe名称或窗口标题> <x坐标> <y坐标> [--width �
 
 ```bash
 # 移动记事本窗口到坐标(100, 100)
+cd window_mover
 python move_window.py notepad.exe 100 100
 
 # 移动记事本窗口并设置尺寸为800x600
+cd window_mover
 python move_window.py notepad.exe 100 100 --width 800 --height 600
 
 # 根据窗口标题移动(如中文标题"记事本")
+cd window_mover
 python move_window.py "记事本" 200 200 --width 800 --height 600
 ```
 
@@ -74,6 +79,7 @@ python move_window.py "记事本" 200 200 --width 800 --height 600
 直接运行脚本，按照提示进行操作：
 
 ```bash
+cd window_mover
 python move_window.py
 ```
 
@@ -85,11 +91,13 @@ python move_window.py
 
 1. 使用批处理文件启动：
    ```
+   cd gui_app
    run_gui.bat
    ```
 
 2. 或直接运行Python脚本：
    ```
+   cd gui_app
    python gui_window_mover.py
    ```
 
@@ -123,6 +131,7 @@ GUI界面包含以下控件：
 
 2. 使用以下命令生成spec文件：
    ```
+   cd gui_app
    pyi-makespec --onedir --windowed gui_window_mover.py
    ```
 
@@ -130,12 +139,13 @@ GUI界面包含以下控件：
 
 4. 使用spec文件构建exe：
    ```
+   cd gui_app
    pyinstaller gui_window_mover.spec
    ```
 
 ### 直接运行EXE版本
 
-打包完成后，在`dist/gui_window_mover`目录下会生成exe文件，可以直接运行：
+打包完成后，在`dist/gui_app`目录下会生成exe文件，可以直接运行：
 - 使用提供的批处理文件：`run_gui_exe.bat`
 - 或直接双击 `gui_window_mover.exe`
 
